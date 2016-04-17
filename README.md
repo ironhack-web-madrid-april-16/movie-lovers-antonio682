@@ -43,33 +43,3 @@ Create more questions to ask about the movies.
 Choose one answer randomly and choose the answer for that one.
 Show that question on the page.
 
-**Make sure there is only one correct answer**
-
-### No search query
-
-Show 9 random movies that you can search with a random word for example.
-Do not expect the user to ask you for a word.
-
-### The whole Quiz!
-
-After answering a question you get the answer. Store if that was correct or not.
-Ask the user if he/she wants another question and show it to him/her.
-When he decides to stop answering. Show him the total score!
-
-##TIPS
-
-### Classes and methods
-
-If you had any, remove all the logic inside the *get* and *post* requests.
-You should be only instantiating a class and calling a method on each of them. Or a few methods maximum for each of them.
-
-Create the classes and methods that you need.
-Separate different behavior in different classes. Do not use only one huge class.
-Create a file for each class. Require it where you want to use it.
-
-### Test those classes
-
-Create the specs to test that the classes and methods work properly. The proper way to do it is creating the test BEFORE you start to code.
-There should be a spec file that requires the files with the classes and checks them.
-
-**Recommendation: Use stubs if there is a dependency on IMDB gem because every query you make can last forever**
