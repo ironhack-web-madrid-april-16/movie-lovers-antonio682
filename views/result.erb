@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<h1>QUIZZ TIME!</h1>
+		<form action="/score" method="post" id="rsp">				
+			<% j = 0 %>
+			<%@questions.each do |question| %>		
+				<h2><%=question %></h2>
+					<%@list.each do |film| %>
+						<label>
+    						<input type="radio" name="response<%=j%>" value="<%=film.id%>" />
+    						<img src="<%=film.poster%>" heigth="80px" width="40px">
+ 					    </label>
+					<%end%>
+				<%j += 1 %>
+			<%end%>
+				<button type="submit">SEND!!!!</button>	
+		</form>
+			<br/> <br/>
+	
+</body>
+</html>
